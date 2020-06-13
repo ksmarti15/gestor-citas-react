@@ -10,9 +10,8 @@ body {
   min-height: 100%;
   padding-bottom: 5rem;
 }
-h1, h2  {
-  color: #333333;
-  padding: 3rem 0;
+h1, h2, h3, h4  {
+  color: #333;
   text-align: center;
   text-transform: uppercase;
   font-family: 'Roboto', sans-serif;
@@ -36,44 +35,61 @@ h1, h2  {
   font-weight: bold;
 }
 
+.card{
+  box-shadow: 0 0 1.25rem rgba(31,45,61,.05);
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid #eff2f7;
+  border-radius: .75rem;
+  padding: 3rem;
+  margin-top: 1rem;
+}
+
+.card:hover{
+  box-shadow: 0 1rem 3rem rgba(0,0,0,.125);
+}
+
+.bg-pink{
+  background-color: #7c4dff;
+  color: #fff;
+}
+
 label {
-  color: white;
+  color: #333;
+}
+
+input[type="text"]:focus, textarea:focus{
+  background-color: #fff;
+  border: 1px solid #7c4dff;
 }
 
 input[type="date"],
 input[type="time"] {
   height: 38px;
-    padding: 6px 10px;
-    background-color: #fff;
-    border: 1px solid #D1D1D1;
-    border-radius: 4px;
-    box-shadow: none;
-    box-sizing: border-box;
+  padding: 6px 10px;
+  background-color: #fff;
+  border: 1px solid #7c4dff;
+  border-radius: 4px;
+  box-shadow: none;
+  box-sizing: border-box;
 }
 
-.cita {
+.cita-card {
   padding: 2rem;
   background: white;
   border-bottom: 1px solid #e1e1e1;
   color: black;
 }
 
-.cita p {
+.cita-card p {
   font-weight: bold;
-  margin-bottom: .8rem;
+  margin-bottom: .4rem;
 }
-.cita p span {
+.cita-card p span {
   font-weight: normal;
 
 }
-.cita:first-of-type {
-  border-top-left-radius: 1rem;
-  border-top-right-radius: 1rem;
-}
-.cita:last-of-type {
-  border-bottom-left-radius: 1rem;
-  border-bottom-right-radius: 1rem;
-}
+
 .button.eliminar,
 .button.eliminar:hover {
   background-color: #c10059;
@@ -82,11 +98,28 @@ input[type="time"] {
 }
 
 .alerta-error {
-  background-color: white;
-  color: red;
+  background-color: #ff1744;
+  color: #fff;
   padding: 1rem;
-  font-size: 2rem;
+  border-radius: .75rem;
+  font-size: 1.3rem;
   text-transform: uppercase;
   text-align: center;
-  font-family:  'Staatliches', cursive;
+  font-weight: 600;
 } 
+
+.button-enviar{
+    color: #fff;
+    background-color: #7c4dff;
+    border-color: #7c4dff;
+}
+
+.button-enviar:hover{
+  color: #fff;
+  background-color: #3f1dcb;
+  border-color: #3f1dcb;
+}
+
+.button-enviar:focus{
+  color: #fff;
+}

@@ -92,13 +92,13 @@ input[type="time"] {
 
 .button.eliminar,
 .button.eliminar:hover {
-  background-color: #c10059;
+  background-color: #c1001a;
   color: white;
   margin-top: 2rem;
 }
 
 .alerta-error {
-  background-color: #ff1744;
+  background-color: #c1001a;
   color: #fff;
   padding: 1rem;
   border-radius: .75rem;
